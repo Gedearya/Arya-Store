@@ -1,0 +1,420 @@
+<html>
+  <head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to Arya Store!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <div class="container">
+        <h3><i class="fas fa-store-alt text-success mr-2"></i></h3>
+        <a class="navbar-brand font-weight-bold" href="#">ARYA STORE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-4">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Daftar <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Masuk <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Pesanan Saya <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Bantuan <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="icon mt-2">
+            <h5>
+              <i
+                class="fas fa-cart-plus ml-3 mr-3"
+                data-toggle="tooltip"
+                title="Keranjang Belanja"
+              ></i>
+              <i
+                class="fas fa-envelope mr-3"
+                data-toggle="tooltip"
+                title="Kotak Masuk"
+              ></i>
+              <i
+                class="fas fa-bell mr-3"
+                data-toggle="tooltip"
+                title="Notifikasi"
+              ></i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row mt-5 no-gutters">
+      <div class="col-md-2 bg-light">
+        <ul class="list-group list-group-flush p-2 pt-4">
+          <li class="list-group-item bg-warning">
+            <i class="fas fa-list"></i> KATEGORI PRODUK
+          </li>
+          <li class="list-group-item"><i class="fas fa-tshirt"></i> Fashion</li>
+          <li class="list-group-item">
+            <i class="fas fa-phone-square"></i> Phone & Tablet
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-laptop"></i> Computer & Office
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-camera"></i> Kamera & Audio
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-football-ball"></i> Sport & Lifestyle
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-gamepad"></i> Mainan & Gaming
+          </li>
+          <li class="list-group-item"><i class="fas fa-tv"></i> Elektronik</li>
+          <li class="list-group-item"><i class="fas fa-crown"></i> Beauty</li>
+          <li class="list-group-item">
+            <i class="fas fa-tachometer-alt"></i> Otomotif
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slide/slide1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide/slide2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide/slide3.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide/slide4.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <h4 class="text-center font-weight-bold m-4">PRODUK TERBARU</h4>
+        <div class="row mx-auto">
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img
+              src="img/produk/headphone.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body bg-light">
+              <h5 class="card-title">Headphone</h5>
+              <p class="card-text">Headphone Bluetooth</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-target="#produk1"
+                data-toggle="modal"
+                >Detail</a
+              >
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/kamera.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">Kamera</h5>
+              <p class="card-text">Kamera DSLR</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/laptop.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Laptop Asus</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/speaker.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">Speaker</h5>
+              <p class="card-text">Speaker Bluetooth</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-auto mt-5">
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/jacket.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">Jaket</h5>
+              <p class="card-text">Jaket Kulit</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/usb.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">USB</h5>
+              <p class="card-text">Kabel USB</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/ssd.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">SSD</h5>
+              <p class="card-text">SSD Kencang</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+
+          <div class="card mr-2 ml-2" style="width: 16rem">
+            <img src="img/produk/sdcard.jpg" class="card-img-top" alt="..." />
+            <div class="card-body bg-light">
+              <h5 class="card-title">SD Card</h5>
+              <p class="card-text">SD Card Besar</p>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star text-success"></i>
+              <i class="fas fa-star-half-alt text-success"></i>
+              <i class="far fa-star text-success"></i><br />
+              <a href="#" class="btn btn-primary">Detail</a>
+              <a href="#" class="btn btn-danger">Rp. 300.000</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="produk1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detail Produk
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/produk/headphone.jpg" />
+                  </div>
+                  <div class="col-md-6">
+                    <table class="table table-borderless">
+                      <tr>
+                        <th>Nama Produk</th>
+                        <td>Headphone</td>
+                      </tr>
+                      <tr>
+                        <th>Merk/Type</th>
+                        <td>Harman/5C</td>
+                      </tr>
+                      <tr>
+                        <th>Biaya Ongkir</th>
+                        <td>Standart</td>
+                      </tr>
+                      <tr>
+                        <th>Rating Produk</th>
+                        <td>
+                          <i class="fas fa-star text-success"></i>
+                          <i class="fas fa-star text-success"></i>
+                          <i class="fas fa-star text-success"></i>
+                          <i class="fas fa-star-half-alt text-success"></i>
+                          <i class="far fa-star text-success"></i><br />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Stock Produk</th>
+                        <td>10 Pcs</td>
+                      </tr>
+                      <tr>
+                        <th>Harga</th>
+                        <td>Rp. 300.000</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  KEMBALI
+                </button>
+                <button type="button" class="btn btn-primary">BELI</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 no-gutters">
+      <footer class="bg-dark text-white p-5">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>LAYANAN PELANGGAN</h5>
+            <ul>
+              <li>Pusat Bantuan</li>
+              <li>Cara Pembelian</li>
+              <li>Pengiriman</li>
+              <li>Cara Pengembalian</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>TENTANG KAMI</h5>
+            <p>
+              Arya Store merupakan salah satu toko online terbesar di Asia. Arya
+              Store menawarkan harga yang kompetitif dari sejumlah produk dalam
+              kategori yang berbeda. GRATIS BIAYA KIRIM!
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>MITRA KERJASAMA</h5>
+            <ul>
+              <li>GOJEK</li>
+              <li>GRAB</li>
+              <li>JNE</li>
+              <li>JNT</li>
+              <li>TIKI</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>HUBUNGI KAMI</h5>
+            <ul>
+              <li>(021) 123456789</li>
+              <li>customer@aryastore.com</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="copyright text-center font-weight-bold bg-warning p-2">
+      <p>
+        Developed by I Gede Arya Danny Pratama Copyright
+        <i class="far fa-copyright"></i> 2021
+      </p>
+    </div>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
